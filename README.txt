@@ -1,7 +1,12 @@
-SABEELEX Website v3 — three-product update
+SABEELEX Website v4 — improved product image backgrounds
 
-Includes Al Mudhish milk powder, Baraka biscuits, and Napta pure sesame oil using the product images provided by the user.
+CHANGES
+- Al Mudhish and Baraka product photos now have transparent backgrounds.
+- Packaging/labels are kept from the original supplied product photos.
+- Product images sit directly on the website card colors; removed the conspicuous white rectangles.
+- Al Mudhish hero uses transparent cutouts as well.
+- All three brands remain on the products page, including Napta.
 
-To update Netlify: unzip and deploy this folder to the EXISTING sabeelex project. Do not create a second project. Your domain and DNS configuration remain unchanged.
-
-Before publishing product advertising, confirm commercial rights to display the respective brands and product imagery and verify product availability. Contact email info@sabeelex.com is a placeholder until mailbox is configured.
+DEPLOY
+Unzip and upload the extracted CONTENTS (index.html at site root) to your existing Netlify project, or commit the contents to your sabeelex GitHub repository if linked to Netlify.
+No GoDaddy DNS changes are needed.
