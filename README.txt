@@ -1,7 +1,6 @@
-SABEELEX Website v5 — Option 2 rotating hero banner
+SABEELEX Website v6 — rotating banner fix
 
-This is a complete static website. Upload the CONTENTS of this folder to the existing Netlify site, or commit all files to your linked GitHub repository. Keep index.html, styles.css, script.js, and assets/ together at the repository root.
+The banner now advances every 4.5 seconds even while the cursor is over it or a carousel control is focused. Use Pause to stop rotation. For users whose device has Reduce Motion enabled, press Play to start.
 
-Hero rotates through Al Mudhish, Baraka and Napta every 6.5 seconds, with arrows, dots, a pause button, mobile layout, and reduced-motion support. Product section and other site content remain intact.
-
-No domain or DNS changes are necessary.
+Deploy: Copy index.html, styles.css, script.js, assets/ to the repository ROOT (not inside a new subfolder) and commit, or upload the extracted files to the existing Netlify site.
+Confirm your deployment includes script.js at the site root. Refresh with Ctrl+Shift+R or a private window to bypass cache.

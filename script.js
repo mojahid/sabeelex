@@ -27,16 +27,14 @@ document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>n.c
     if(announce)announcement.textContent=`Featured product ${index+1} of ${slides.length}: ${slideNames[index]}`;
   }
   function stop(){if(timer!==null){clearInterval(timer);timer=null}}
-  function start(){stop();if(!userPaused&&!document.hidden)timer=setInterval(()=>show(index+1,false),6500)}
+  function start(){stop();if(!userPaused&&!document.hidden)timer=setInterval(()=>show(index+1,false),4500)}
   function refreshPause(){pause.setAttribute('aria-pressed',String(userPaused));pause.setAttribute('aria-label',userPaused?'Resume automatic banner rotation':'Pause automatic banner rotation');pause.innerHTML=userPaused?'▶ <span>Play</span>':'Ⅱ <span>Pause</span>'}
   function go(i){show(i);start()}
   prev.addEventListener('click',()=>go(index-1));next.addEventListener('click',()=>go(index+1));
   dots.forEach((dot,i)=>dot.addEventListener('click',()=>go(i)));
   pause.addEventListener('click',()=>{userPaused=!userPaused;refreshPause();start()});
-  root.addEventListener('mouseenter',stop);
-  root.addEventListener('mouseleave',start);
-  root.addEventListener('focusin',stop);
-  root.addEventListener('focusout',event=>{if(!root.contains(event.relatedTarget))start()});
+  // Keep auto-rotation running while hovering or focusing banner controls.
+  // The explicit Pause button is the only user control that stops rotation.
   root.addEventListener('keydown',e=>{if(e.target.matches('input,textarea'))return;if(e.key==='ArrowLeft'){e.preventDefault();go(index-1)}if(e.key==='ArrowRight'){e.preventDefault();go(index+1)}});
   document.addEventListener('visibilitychange',()=>document.hidden?stop():start());
   motion.addEventListener('change',()=>{userPaused=motion.matches;refreshPause();start()});
