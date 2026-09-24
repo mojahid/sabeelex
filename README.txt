@@ -1,12 +1,7 @@
-SABEELEX Website v4 — improved product image backgrounds
+SABEELEX Website v5 — Option 2 rotating hero banner
 
-CHANGES
-- Al Mudhish and Baraka product photos now have transparent backgrounds.
-- Packaging/labels are kept from the original supplied product photos.
-- Product images sit directly on the website card colors; removed the conspicuous white rectangles.
-- Al Mudhish hero uses transparent cutouts as well.
-- All three brands remain on the products page, including Napta.
+This is a complete static website. Upload the CONTENTS of this folder to the existing Netlify site, or commit all files to your linked GitHub repository. Keep index.html, styles.css, script.js, and assets/ together at the repository root.
 
-DEPLOY
-Unzip and upload the extracted CONTENTS (index.html at site root) to your existing Netlify project, or commit the contents to your sabeelex GitHub repository if linked to Netlify.
-No GoDaddy DNS changes are needed.
+Hero rotates through Al Mudhish, Baraka and Napta every 6.5 seconds, with arrows, dots, a pause button, mobile layout, and reduced-motion support. Product section and other site content remain intact.
+
+No domain or DNS changes are necessary.

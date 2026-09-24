@@ -24,21 +24,66 @@
 </header>
 
 <main id="home">
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="kicker">TRUSTED PRODUCTS · GROWING MARKETS</p>
-        <h1>Bringing Quality Products to Growing Markets</h1>
-        <p class="lead">SABEELEX connects manufacturers, brands, retailers and wholesale buyers through sourcing, import, export and distribution partnerships.</p>
-        <a class="btn" href="#products">Explore Our Products <span>→</span></a>
-      </div>
-      <div class="product-stage">
-        <div class="halo"></div>
-        <img class="can can-ar" src="assets/almudhish-ar-cutout.png" alt="Al Mudhish instant whole milk powder Arabic packaging">
-        <img class="can can-en" src="assets/almudhish-en-cutout.png" alt="Al Mudhish instant whole milk powder English packaging">
-      </div>
+  <section class="hero hero-slider" aria-label="Featured SABEELEX products" aria-roledescription="carousel" tabindex="0">
+    <div class="hero-slides" aria-live="off">
+      <article class="hero-slide is-active theme-milk" data-slide="0" aria-roledescription="slide" aria-label="1 of 3: Al Mudhish" aria-hidden="false">
+        <div class="hero-bg"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">TRUSTED PRODUCTS · GROWING MARKETS</p>
+            <h1>Bringing Quality Products to Growing Markets</h1>
+            <p class="lead">SABEELEX connects manufacturers, brands, retailers and wholesale buyers through sourcing, import, export and distribution partnerships.</p>
+            <a class="btn" href="#products">Explore Our Products <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="product-stage milk-stage">
+            <div class="halo"></div>
+            <img class="can can-ar" src="assets/almudhish-ar-cutout.png" alt="Al Mudhish instant whole milk powder Arabic packaging" fetchpriority="high">
+            <img class="can can-en" src="assets/almudhish-en-cutout.png" alt="Al Mudhish instant whole milk powder English packaging" fetchpriority="high">
+          </div>
+        </div>
+      </article>
+      <article class="hero-slide theme-baraka" data-slide="1" aria-roledescription="slide" aria-label="2 of 3: Baraka" aria-hidden="true" inert>
+        <div class="hero-bg"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">FEATURED BRAND · BISCUITS</p>
+            <h2 class="hero-title">A Familiar Favorite. New Market Opportunities.</h2>
+            <p class="lead">Explore Baraka biscuits in the SABEELEX product portfolio. Connect with our team for wholesale and distribution inquiries.</p>
+            <a class="btn" href="mailto:info@sabeelex.com?subject=Baraka%20biscuits%20wholesale%20inquiry">Inquire About Baraka <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="product-stage baraka-stage">
+            <div class="halo"></div>
+            <img class="feature-pack" src="assets/baraka-biscuits-cutout.png" alt="Baraka biscuits packaging" loading="lazy">
+          </div>
+        </div>
+      </article>
+      <article class="hero-slide theme-napta" data-slide="2" aria-roledescription="slide" aria-label="3 of 3: Napta" aria-hidden="true" inert>
+        <div class="hero-bg"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">FEATURED BRAND · PURE SESAME OIL</p>
+            <h2 class="hero-title">Traditional Flavor. Growing Possibilities.</h2>
+            <p class="lead">Discover Napta pure sesame oil. Contact SABEELEX about wholesale opportunities and planned market availability.</p>
+            <a class="btn" href="mailto:info@sabeelex.com?subject=Napta%20sesame%20oil%20wholesale%20inquiry">Inquire About Napta <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="product-stage napta-stage">
+            <div class="halo"></div>
+            <img class="napta-promo" src="assets/napta-sesame-oil-promo.jpeg" alt="Napta pure sesame oil promotional image" loading="lazy">
+          </div>
+        </div>
+      </article>
     </div>
+    <div class="container hero-controls" aria-label="Banner controls">
+      <button class="slide-arrow slide-prev" type="button" aria-label="Previous featured product">‹</button>
+      <div class="slide-dots" role="group" aria-label="Choose featured product">
+        <button type="button" class="slide-dot is-active" data-go="0" aria-label="Show Al Mudhish" aria-current="true"><span class="sr-only">Al Mudhish</span></button>
+        <button type="button" class="slide-dot" data-go="1" aria-label="Show Baraka" aria-current="false"><span class="sr-only">Baraka</span></button>
+        <button type="button" class="slide-dot" data-go="2" aria-label="Show Napta" aria-current="false"><span class="sr-only">Napta</span></button>
+      </div>
+      <button class="slide-arrow slide-next" type="button" aria-label="Next featured product">›</button>
+      <button class="slide-pause" type="button" aria-label="Pause automatic banner rotation" aria-pressed="false">Ⅱ <span>Pause</span></button>
+    </div>
+    <p class="sr-only" id="slide-announcement" aria-live="polite" aria-atomic="true"></p>
   </section>
 
   <section class="pillars" id="services">
